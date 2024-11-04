@@ -1,0 +1,417 @@
+﻿{% load static %}
+<!doctype html>
+<html lang="fa" dir="rtl" class="theme-light">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords"
+          content="HTML5,CSS3,HTML,Template,multi-page,StartP - IT Startups and Digital Services HTML Template">
+    <meta name="description" content="StartP - IT Startups and Digital Services HTML Template">
+    <meta name="author" content="Barat Hadian">
+
+    <!-- All CSS Link -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/odometer.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dark-color/dark-style.css' %}">
+
+    <title>StartP - قالب HTML استارتپی ، پوسته چندمنظوره استارت آپ شرکتی فناوری اطلاعات و خدمات دیجیتال</title>
+
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+</head>
+
+<body>
+
+<!-- Start Preloader Area -->
+<div class="preloader">
+    <div class="spinner"></div>
+</div>
+<!-- End Preloader Area -->
+
+<!-- Start Navbar Area -->
+<header id="header" class="headroom">
+    <div class="startp-responsive-nav">
+        <div class="container">
+            <div class="startp-responsive-menu">
+                <div class="logo black-logo">
+                    <a href="index.html">
+                        <img src="{% static 'img/logo.png' %}" alt="logo">
+                    </a>
+                </div>
+                <div class="logo white-logo">
+                    <a href="index.html">
+                        <img src="{% static 'img/white-logo.png' %}" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="startp-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand black-logo" href="index.html"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+                <a class="navbar-brand white-logo" href="index.html"><img src="{% static 'img/white-logo.png %'}"
+                                                                          alt=" logo"></a>
+
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav mr-auto">
+                        <li class="nav-item"><a href="{% url 'home_app:home' %}" class="nav-link">خانه</a></li>
+
+                        <li class="nav-item"><a href="{% url 'contactus_app:about' %}" class="nav-link">درباره ما</a>
+                        </li>
+
+
+                        <li class="nav-item"><a href="{% url 'blog:blog_list' %}" class="nav-link">وبلاگ</a></li>
+
+
+                        <li class="nav-item"><a href="{% url 'project:service-list' %}" class="nav-link">خدمات</a>
+                        </li>
+
+                        <li class="nav-item"><a href="{% url 'project:sample-list' %}" class="nav-link">نمونه کارها</a>
+                        </li>
+
+                        <li class="nav-item"><a href="{% url 'contactus_app:contactus' %}"
+                                                class="nav-link {% if request.resolver_match.url_name == 'contactus' %}active{% endif %}">تماس
+                            با ما</a></li>
+
+                    </ul>
+                </div>
+
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="others-option-for-responsive">
+        <div class="container">
+            <div class="dot-menu">
+                <div class="inner">
+                    <div class="circle circle-one"></div>
+                    <div class="circle circle-two"></div>
+                    <div class="circle circle-three"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="option-inner">
+                    <div class="others-option">
+                        <a href="cart.html" class="cart-wrapper-btn"><i data-feather="shopping-cart"></i><span>0</span></a>
+                        <a href="contact.html" class="btn btn-light">پشتیبانی</a>
+                        <a href="login.html" class="btn btn-primary">ورود</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Navbar Area -->
+
+<!-- Start Page Title -->
+<div class="page-title-area">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <h2>تماس با ما</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape1"><img src="{% static 'img/shape1.png' %}" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+    <div class="shape3"><img src="{% static 'img/shape3.svg' %}" alt="shape"></div>
+    <div class="shape4"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape5"><img src="{% static 'img/shape5.png' %}" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape7"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+</div>
+<!-- End Page Title -->
+
+<!-- Start Contact Info Area -->
+<section class="contact-info-area ptb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="contact-info-box">
+                    <div class="icon">
+                        <i data-feather="mail"></i>
+                    </div>
+                    <h3>ایمیل ما</h3>
+                    <p><a href="#">Yoursite@site.com</a></p>
+                    <p><a href="#">info@site.com</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="contact-info-box">
+                    <div class="icon">
+                        <i data-feather="map-pin"></i>
+                    </div>
+                    <h3>آدرس ما</h3>
+                    <p>کشور شما ، استان و شهر شما ، محله و منطقه سکونت منزل شما</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                <div class="contact-info-box">
+                    <div class="icon">
+                        <i data-feather="phone"></i>
+                    </div>
+                    <h3>تماس بگیرید</h3>
+                    <p><a style="direction: ltr;" href="#">+123 456 7890</a></p>
+                    <p><a style="direction: ltr;" href="#">+241 452 4526</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Info Area -->
+
+<!-- Map -->
+<div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d365.31168718206385!2d51.50816142636792!3d35.73727067723282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1729098317984!5m2!1sen!2sde"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- Start Contact Area -->
+<section class="contact-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <h2>با ما در تماس باشید</h2>
+            <div class="bar"></div>
+            <p>هر چیزی در ذهن شما باشد. ما خوشحال خواهیم شد که به شما کمک کنیم!</p>
+        </div>
+
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <img src="{% static 'img/1.png' %}" alt="image">
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <form method="post" action="{% url 'contactus_app:contactus' %}">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                {{ form.name }}
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                {{ form.meli_code }}
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                {{ form.email }}
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-6">
+                            <div class="form-group">
+                                {{ form.phone }}
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                {{ form.message }}
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-12 col-md-12">
+                            <button type="submit" class="btn btn-primary">ارسال پیام</button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Area -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">پیام موفقیت آمیز</h5>
+                <button type="button" class="btn-close" aria-label="Close"></button> <!-- دکمه ضربدر -->
+            </div>
+            <div class="modal-body">
+                اطلاعات شما با موفقیت ثبت شد.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="closeButton">بستن</button> <!-- دکمه بستن -->
+            </div>
+        </div>
+    </div>
+</div>
+{#end Modal#}
+
+
+<!-- Start Footer Area -->
+<footer class="footer-area bg-f7fafd">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <div class="logo black-logo">
+                        <a href="index.html"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+                    </div>
+                    <div class="logo white-logo">
+                        <a href="index.html"><img src="{% static 'img/white-logo.png' %}" alt="logo"></a>
+                    </div>
+                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت
+                        بوده است.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget pl-5">
+                    <h3>خدمات شرکت</h3>
+                    <ul class="list">
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">خدمات</a></li>
+                        <li><a href="#">امکانات</a></li>
+                        <li><a href="#">قیمت گذاری</a></li>
+                        <li><a href="#">آخرین اخبار</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h3>پشتیبانی</h3>
+                    <ul class="list">
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                        <li><a href="#">قوانین و ضوابط</a></li>
+                        <li><a href="#">انجمن</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h3>آدرس شرکت</h3>
+
+                    <ul class="footer-contact-info">
+                        <li><i data-feather="map-pin"></i> کشور شما ، استان و شهر شما ، محله و منطقه شما</li>
+                        <li><i data-feather="mail"></i> ایمیل: <a href="#">Yoursite@site.com</a></li>
+                        <li><i data-feather="phone-call"></i> تلفن: <a style="direction: ltr;" href="#">+ (321) 984
+                            754</a></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="#" class="facebook"><i data-feather="facebook"></i></a></li>
+                        <li><a href="#" class="twitter"><i data-feather="twitter"></i></a></li>
+                        <li><a href="#" class="instagram"><i data-feather="instagram"></i></a></li>
+                        <li><a href="#" class="linkedin"><i data-feather="linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+                <div class="copyright-area">
+                    <p> 1403 © تمام حقوق قالب محفوظ است. طراحی و توسعه توسط <a
+                            href="https://www.rtl-theme.com/author/barat/" target="_blank">Barat Hadian</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="{% static 'img/map.png' %}" class="map" alt="map">
+    <div class="shape1"><img src="{% static 'img/shape1.png' %}" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+</footer>
+<!-- End Footer Area -->
+
+<div class="go-top"><i data-feather="arrow-up"></i></div>
+
+<!-- Dark/Light Toggle -->
+<div class="dark-version">
+    <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider">
+        <span class="slider round"></span>
+    </label>
+</div>
+
+<!-- All JS Link -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/appear.min.js' %}"></script>
+<script src="{% static 'js/odometer.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/feather.min.js' %}"></script>
+<script src="{% static 'js/form-validator.min.js' %}"></script>
+<script src="{% static 'js/contact-form-script.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $('form').on('submit', function (event) {
+            event.preventDefault();  // جلوگیری از ارسال پیش‌فرض فرم
+
+            $.ajax({
+                type: 'POST',
+                url: $(this).attr('action'),  // URL فرم
+                data: $(this).serialize(),  // داده‌های فرم
+                success: function (response) {
+                    // در اینجا بررسی کنید که آیا ارسال موفقیت‌آمیز بوده است
+                    $('#successModal').modal('show');
+                },
+                error: function (xhr) {
+                    // در صورت بروز خطا می‌توانید اینجا مدیریت کنید
+                    alert('خطا در ارسال اطلاعات. لطفاً دوباره تلاش کنید.');
+                }
+            });
+        });
+
+        // وقتی بر روی دکمه بسته شدن (ضربدر) کلیک می‌شود
+        $('.btn-close').on('click', function () {
+            window.location.href = "{% url 'home_app:home' %}";  // آدرس صفحه اصلی
+        });
+
+        // وقتی بر روی دکمه بستن کلیک می‌شود
+        $('#closeButton').on('click', function () {
+            window.location.href = "{% url 'home_app:home' %}";  // آدرس صفحه اصلی
+        });
+    });
+</script>
+
+
+</body>
+</html>

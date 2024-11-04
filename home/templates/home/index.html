@@ -1,0 +1,891 @@
+﻿{% load static %}
+
+
+<!doctype html>
+<html lang="fa" dir="rtl" class="theme-light">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords"
+          content="HTML5,CSS3,HTML,Template,multi-page,StartP - IT Startups and Digital Services HTML Template">
+    <meta name="description" content="StartP - IT Startups and Digital Services HTML Template">
+    <meta name="author" content="Barat Hadian">
+
+    <!-- All CSS Link -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/boxicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/odometer.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slick.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/color/brink-pink-style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/rtl.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dark-color/brink-pink-dark-style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dark-color/dark-style.css' %}">
+
+    <title>StartP - قالب HTML استارتپی ، پوسته چندمنظوره استارت آپ شرکتی فناوری اطلاعات و خدمات دیجیتال</title>
+
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+</head>
+
+
+<body>
+<!-- Start Preloader Area -->
+<div class="preloader">
+    <div class="spinner"></div>
+</div>
+<!-- End Preloader Area -->
+
+
+<!-- Start Navbar Area -->
+<header id="header" class="headroom navbar-style-three">
+    <div class="startp-responsive-nav">
+        <div class="container">
+            <div class="startp-responsive-menu">
+                <div class="logo black-logo">
+                    <a href="index.html">
+                        <img src="{% static 'img/logo.png' %}" alt="logo">
+                    </a>
+                </div>
+                <div class="logo white-logo">
+                    <a href="index.html">
+                        <img src="{% static 'img/white-logo.png' %}" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="startp-nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand black-logo" href="index.html"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+                <a class="navbar-brand white-logo" href="index.html"><img src="{% static 'img/white-logo.png' %}"
+                                                                          alt="logo"></a>
+
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav">
+
+                        <li class="nav-item"><a href="{% url 'home_app:home' %}"
+                                                class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}">خانه</a>
+                        </li>
+
+
+                        <li class="nav-item"><a href="{% url 'contactus_app:about' %}" class="nav-link">درباره ما</a>
+                        </li>
+
+
+                        <li class="nav-item"><a href="{% url 'blog:blog_list' %}" class="nav-link">وبلاگ</a></li>
+
+                        <li class="nav-item"><a href="{% url 'project:service-list' %}" class="nav-link">خدمات</a>
+                        </li>
+
+                        <li class="nav-item"><a href="{% url 'project:sample-list' %}" class="nav-link">نمونه کارها</a>
+                        </li>
+
+                        <li class="nav-item"><a href="{% url 'project:sample-list' %}" class="nav-link">سوالات متداول</a>
+                        </li>
+
+
+                        <li class="nav-item"><a href="{% url 'contactus_app:contactus' %}" class="nav-link">تماس با
+                            ما</a></li>
+                    </ul>
+                </div>
+
+
+            </nav>
+        </div>
+    </div>
+
+    <div class="others-option-for-responsive">
+        <div class="container">
+            <div class="dot-menu">
+                <div class="inner">
+                    <div class="circle circle-one"></div>
+                    <div class="circle circle-two"></div>
+                    <div class="circle circle-three"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="option-inner">
+                    <div class="others-option">
+                        <a href="#" class="btn btn-gradient">تماس با ما</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Navbar Area -->
+
+
+<!-- Start Agency Main Banner -->
+<div class="agency-main-banner">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="agency-banner-content">
+                    <span class="sub-title">ما خلاق هستیم</span>
+                    <h1>آژانس دیجیتال</h1>
+                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                        صنعت
+                        بوده است.</p>
+                    <a href="#" class="btn btn-secondary">شروع کنید</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="agency-banner-image">
+                    <img src="{% static 'img/agency-image/banner-img.jpg' %}" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape2 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+
+    <div class="shape3"><img src="{% static 'img/shape3.svg' %}" alt="shape"></div>
+    <div class="shape4"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+
+</div>
+<!-- End Agency Main Banner -->
+
+<!-- Start Our Solutions Area -->
+<section class="solutions-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">چیزی که ما پیشنهاد میدیم</span>
+            <h2>راه حل های برجسته ما</h2>
+            <div class="bar"></div>
+            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده
+                است.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="solutions-box">
+                    <div class="icon">
+                        <i class="bx bx-landscape"></i>
+                        <img src="{% static 'img/agency-image/icon-bg.png' %}" alt="image">
+                    </div>
+
+                    <h3><a href="#">تبلیغات برنامه ای</a></h3>
+                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                        صنعت
+                        بوده است.</p>
+                    <a href="#" class="learn-more-btn"><i data-feather="plus-circle"></i> بیشتر بدانید</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="solutions-box">
+                    <div class="icon">
+                        <i class="bx bx-bar-chart-alt"></i>
+                        <img src="{% static 'img/agency-image/icon-bg.png' %}" alt="image">
+                    </div>
+
+                    <h3><a href="#">استراتژی و تحقیق</a></h3>
+                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                        صنعت
+                        بوده است.</p>
+                    <a href="#" class="learn-more-btn"><i data-feather="plus-circle"></i> بیشتر بدانید</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="solutions-box">
+                    <div class="icon">
+                        <i class="bx bx-devices"></i>
+                        <img src="{% static 'img/agency-image/icon-bg.png' %}" alt="image">
+                    </div>
+
+                    <h3><a href="#">طراحی و توسعه</a></h3>
+                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                        صنعت
+                        بوده است.</p>
+                    <a href="#" class="learn-more-btn"><i data-feather="plus-circle"></i> بیشتر بدانید</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="solutions-box">
+                    <div class="icon">
+                        <i class="bx bx-chalkboard"></i>
+                        <img src="{% static 'img/agency-image/icon-bg.png' %}" alt="image">
+                    </div>
+
+                    <h3><a href="#">برندسازی و بازاریابی</a></h3>
+                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                        صنعت
+                        بوده است.</p>
+                    <a href="#" class="learn-more-btn"><i data-feather="plus-circle"></i> بیشتر بدانید</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape9 wow animate__animated animate__fadeInRight slow"><img
+            src="{% static 'img/agency-image/shape1.png' %}" alt="image"></div>
+</section>
+<!-- End Our Solutions Area -->
+
+<!-- Start About Area -->
+<section class="agency-about-area">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="agency-about-img">
+                    <img src="{% static 'img/agency-image/about-img.jpg' %}" alt="image">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="agency-about-content">
+                    <span class="sub-title">درباره ما</span>
+                    <h2>جذب مخاطبان جدید از طریق رویکرد هوشمند</h2>
+                    <div class="bar"></div>
+                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                        صنعت
+                        بوده است.</p>
+                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                        صنعت
+                        بوده است. لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال
+                        استاندارد صنعت بوده است.</p>
+
+                    <a href="#" class="btn btn-secondary">بیشتر بدانید</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape2 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+    <div class="shape3"><img src="{% static 'img/shape3.svg' %}" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape7"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+    <div class="shape10"><img src="{% static 'img/agency-image/shape2.png' %}" alt="image"></div>
+</section>
+<!-- End About Area -->
+
+<!-- Start Services Area -->
+<div class="agency-services-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">راه حل های ما</span>
+            <h2>خدمات ما</h2>
+            <div class="bar"></div>
+            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده
+                است.</p>
+        </div>
+
+        <div class="row">
+            {% for service in services %}
+                <div class="col-lg-4 col-sm-6 col-md-6">
+                    <div class="agency-services-box">
+                        <img src="{{ service.image.url }}" alt="image">
+                        <div class="content">
+                            <h3><a href="{% url 'project:service-detail' service.id %}">{{ service.title }}</a></h3>
+                            <a href="{% url 'project:service-detail' service.id %}" class="read-more-btn">بیشتر بدانید
+                                <i data-feather="plus-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="shape2 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+    <div class="shape3"><img src="{% static 'img/shape3.svg' %}" alt="shape"></div>
+    <div class="shape4"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape7"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+</div>
+<!-- End Services Area -->
+
+<!-- Start Fun Facts Area -->
+<section class="funfacts-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <h2>ما همیشه سعی می کنیم انتظار کاربران را درک کنیم</h2>
+            <div class="bar"></div>
+            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده
+                است. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده است</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3>K<span style="direction: ltr;" class="odometer" data-count="180">00</span></h3>
+                    <p>بارگیری شده</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3>K<span style="direction: ltr;" class="odometer" data-count="20">00</span></h3>
+                    <p>بازخورد</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span style="direction: ltr;" class="odometer" data-count="500">00</span>+</h3>
+                    <p>کارگران</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span style="direction: ltr;" class="odometer" data-count="70">00</span>+</h3>
+                    <p>مشارکت کنندگان</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-cta-box">
+            <h3>سوالی در مورد ما دارید؟</h3>
+            <p>شک نکنید با ما تماس بگیرید</p>
+            <a href="#" class="btn btn-primary">تماس با ما</a>
+        </div>
+
+        <div class="map-bg">
+            <img src="{% static 'img/map.png' %}" alt="map">
+        </div>
+    </div>
+
+    <div class="shape1"><img src="{% static 'img/shape1.png' %}" alt="shape"></div>
+    <div class="shape4"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+</section>
+<!-- End Fun Facts Area -->
+
+<!-- Start ML Projects Area -->
+<section class="ml-projects-area pt-0 ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <h2>پروژه های با افتخار که باعث می شوند ما در کنار شما باشیم</h2>
+            <div class="bar"></div>
+            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده
+                است.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="ml-projects-slides owl-carousel owl-theme">
+            <div class="single-ml-projects-box">
+                <img src="{% static 'img/projects-img1.jpg' %}" alt="image">
+
+                <div class="plus-icon">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="single-ml-projects-box">
+                <img src="{% static 'img/projects-img2.jpg' %}" alt="image">
+
+                <div class="plus-icon">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="single-ml-projects-box">
+                <img src="{% static 'img/projects-img3.jpg' %}" alt="image">
+
+                <div class="plus-icon">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="single-ml-projects-box">
+                <img src="{% static 'img/projects-img4.jpg' %}" alt="image">
+
+                <div class="plus-icon">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="single-ml-projects-box">
+                <img src="{% static 'img/projects-img5.jpg' %}" alt="image">
+
+                <div class="plus-icon">
+                    <a href="#">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape2 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+    <div class="shape3"><img src="{% static 'img/shape3.svg' %}" alt="shape"></div>
+    <div class="shape4"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape7"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+</section>
+<!-- End ML Projects Area -->
+
+<!-- Start Pricing Area -->
+<section class="pricing-area pt-0 ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">قیمت ها</span>
+            <h2>برنامه قیمت گذاری ما</h2>
+            <div class="bar"></div>
+            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده
+                است.</p>
+        </div>
+
+        <div class="tab pricing-tab bg-color">
+            <ul class="tabs">
+                <li><a href="#">
+                    ماهانه
+                </a></li>
+
+                <li><a href="#">
+                    سالانه
+                </a></li>
+            </ul>
+
+            <div class="tab_content">
+                <div class="tabs_item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>رایگان</h3>
+                                    <p>کسب و کار خود را به مرحله <br>اجرا نزدیک کنید</p>
+                                </div>
+
+                                <div class="price">
+                                    0 تومان <span>/ ماهانه</span>
+                                </div>
+
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">شروع رایگان</a>
+                                </div>
+
+                                <ul class="pricing-features">
+                                    <li><i data-feather='check'></i> کشیدن و رها کردن سازنده</li>
+                                    <li><i data-feather='check'></i> تولید سرب و فروش</li>
+                                    <li><i data-feather='check'></i> دستیارهای بوت و دیجیتال</li>
+                                    <li><i data-feather='check'></i> خدمات مشتری</li>
+                                    <li><i data-feather='check'></i> حداکثر 1000 مشترک</li>
+                                    <li><i data-feather='check'></i> پخش نامحدود</li>
+                                    <li><i data-feather='check'></i> صفحات فرود و ابزارکهای وب</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>حرفه ای</h3>
+                                    <p>کسب و کار خود را به مرحله <br>اجرا نزدیک کنید</p>
+                                </div>
+
+                                <div class="price">
+                                    149 تومان <span>/ ماهانه</span>
+                                </div>
+
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">شروع 3 روز آزمایشی رایگان</a>
+                                </div>
+
+                                <ul class="pricing-features">
+                                    <li><i data-feather='check'></i> کشیدن و رها کردن سازنده</li>
+                                    <li><i data-feather='check'></i> تولید سرب و فروش</li>
+                                    <li><i data-feather='check'></i> دستیارهای بوت و دیجیتال</li>
+                                    <li><i data-feather='check'></i> خدمات مشتری</li>
+                                    <li><i data-feather='check'></i> حداکثر 1000 مشترک</li>
+                                    <li><i data-feather='check'></i> پخش نامحدود</li>
+                                    <li><i data-feather='check'></i> صفحات فرود و ابزارکهای وب</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>پیشرفته</h3>
+                                    <p>کسب و کار خود را به مرحله <br>اجرا نزدیک کنید</p>
+                                </div>
+
+                                <div class="price">
+                                    256 تومان <span>/ ماهانه</span>
+                                </div>
+
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">شروع 6 روز آزمایشی رایگان</a>
+                                </div>
+
+                                <ul class="pricing-features">
+                                    <li><i data-feather='check'></i> کشیدن و رها کردن سازنده</li>
+                                    <li><i data-feather='check'></i> تولید سرب و فروش</li>
+                                    <li><i data-feather='check'></i> دستیارهای بوت و دیجیتال</li>
+                                    <li><i data-feather='check'></i> خدمات مشتری</li>
+                                    <li><i data-feather='check'></i> حداکثر 1000 مشترک</li>
+                                    <li><i data-feather='check'></i> پخش نامحدود</li>
+                                    <li><i data-feather='check'></i> صفحات فرود و ابزارکهای وب</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tabs_item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>رایگان</h3>
+                                    <p>کسب و کار خود را به مرحله <br>اجرا نزدیک کنید</p>
+                                </div>
+
+                                <div class="price">
+                                    0 تومان <span>/ سالانه</span>
+                                </div>
+
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">شروع رایگان</a>
+                                </div>
+
+                                <ul class="pricing-features">
+                                    <li><i data-feather='check'></i> کشیدن و رها کردن سازنده</li>
+                                    <li><i data-feather='check'></i> تولید سرب و فروش</li>
+                                    <li><i data-feather='check'></i> دستیارهای بوت و دیجیتال</li>
+                                    <li><i data-feather='check'></i> خدمات مشتری</li>
+                                    <li><i data-feather='check'></i> حداکثر 1000 مشترک</li>
+                                    <li><i data-feather='check'></i> پخش نامحدود</li>
+                                    <li><i data-feather='check'></i> صفحات فرود و ابزارکهای وب</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>حرفه ای</h3>
+                                    <p>کسب و کار خود را به مرحله <br>اجرا نزدیک کنید</p>
+                                </div>
+
+                                <div class="price">
+                                    256 تومان <span>/ سالانه</span>
+                                </div>
+
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">شروع 3 روز آزمایشی رایگان</a>
+                                </div>
+
+                                <ul class="pricing-features">
+                                    <li><i data-feather='check'></i> کشیدن و رها کردن سازنده</li>
+                                    <li><i data-feather='check'></i> تولید سرب و فروش</li>
+                                    <li><i data-feather='check'></i> دستیارهای بوت و دیجیتال</li>
+                                    <li><i data-feather='check'></i> خدمات مشتری</li>
+                                    <li><i data-feather='check'></i> حداکثر 1000 مشترک</li>
+                                    <li><i data-feather='check'></i> پخش نامحدود</li>
+                                    <li><i data-feather='check'></i> صفحات فرود و ابزارکهای وب</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>پیشرفته</h3>
+                                    <p>کسب و کار خود را به مرحله <br>اجرا نزدیک کنید</p>
+                                </div>
+
+                                <div class="price">
+                                    279 تومان <span>/ سالانه</span>
+                                </div>
+
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">شروع 6 روز آزمایشی رایگان</a>
+                                </div>
+
+                                <ul class="pricing-features">
+                                    <li><i data-feather='check'></i> کشیدن و رها کردن سازنده</li>
+                                    <li><i data-feather='check'></i> تولید سرب و فروش</li>
+                                    <li><i data-feather='check'></i> دستیارهای بوت و دیجیتال</li>
+                                    <li><i data-feather='check'></i> خدمات مشتری</li>
+                                    <li><i data-feather='check'></i> حداکثر 1000 مشترک</li>
+                                    <li><i data-feather='check'></i> پخش نامحدود</li>
+                                    <li><i data-feather='check'></i> صفحات فرود و ابزارکهای وب</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape9"><img src="{% static 'img/agency-image/shape1.png' %}" alt="image"></div>
+</section>
+<!-- End Pricing Area -->
+
+<!-- Start ML Feedback Area -->
+<section class="ml-feedback-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">مشتریان ما</span>
+            <h2>بازخورد مشتریان ما</h2>
+            <div class="bar"></div>
+            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده
+                است.</p>
+        </div>
+
+        <div class="ml-feedback-slides owl-carousel owl-theme">
+            <div class="single-testimonials-item">
+                <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت
+                    بوده
+                    است. لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                    صنعت بوده است.</p>
+
+                <div class="client-info">
+                    <img src="{% static 'img/client-image/1.jpg' %}" alt="image">
+                    <div class="rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <h3>سارا تیلور</h3>
+                    <span>سئوکار</span>
+                </div>
+            </div>
+
+            <div class="single-testimonials-item">
+                <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت
+                    بوده
+                    است. لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                    صنعت بوده است.</p>
+
+                <div class="client-info">
+                    <img src="{% static 'img/client-image/3.jpg' %}" alt="image">
+                    <div class="rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <h3>سارا تیلور</h3>
+                    <span>سئوکار</span>
+                </div>
+            </div>
+
+            <div class="single-testimonials-item">
+                <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت
+                    بوده
+                    است. لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد
+                    صنعت بوده است.</p>
+
+                <div class="client-info">
+                    <img src="{% static 'img/client-image/2.jpg' %}" alt="image">
+                    <div class="rating">
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                        <i data-feather="star"></i>
+                    </div>
+                    <h3>سارا تیلور</h3>
+                    <span>سئوکار</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="user-shape1"><img src="{% static 'img/agency-image/user1.png' %}" alt="image"></div>
+    <div class="user-shape2"><img src="{% static 'img/agency-image/user2.png' %}" alt="image"></div>
+    <div class="user-shape3"><img src="{% static 'img/agency-image/user3.png' %}" alt="image"></div>
+    <div class="user-shape4"><img src="{% static 'img/agency-image/user4.png' %}" alt="image"></div>
+    <div class="user-shape5"><img src="{% static 'img/agency-image/user5.png' %}" alt="image"></div>
+    <div class="user-shape6"><img src="{% static 'img/agency-image/user6.png' %}" alt="image"></div>
+</section>
+<!-- End ML Feedback Area -->
+
+<!-- Start Blog Area -->
+<section class="blog-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">اخبار</span>
+            <h2>اخبار وبلاگ ما</h2>
+            <div class="bar"></div>
+            <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت بوده
+                است.</p>
+        </div>
+
+        <div class="row">
+            {% for article in articles %}
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-post-item">
+                        <div class="post-image">
+                            <a>
+                                <img src="{{ article.image.url }}" alt="image">
+                            </a>
+                        </div>
+
+                        <div class="post-content">
+                            <ul class="post-meta">
+                                <li>{{ article.created }}</li>
+                            </ul>
+                            <h3><a href="{% url 'blog:blog_detail' article.id %}">{{ article.title }}</a></h3>
+                            <a href="{% url 'blog:blog_detail' article.id %}" class="read-more-btn">ادامه خواندن <i
+                                    data-feather="plus-circle"></i></a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="shape2 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+    <div class="shape3"><img src="{% static 'img/shape3.svg' %}" alt="shape"></div>
+    <div class="shape4"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape7"><img src="{% static 'img/shape4.svg' %}" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+</section>
+<!-- End Blog Area -->
+
+<!-- Start CTA Area -->
+<section class="agency-cta-area ptb-80">
+    <div class="container">
+        <div class="agency-cta-content">
+            <h2>آیا پروژه ای برای کار خود دارید؟</h2>
+            <a href="#" class="btn btn-gradient">تماس بگیرید</a>
+        </div>
+    </div>
+</section>
+<!-- End CTA Area -->
+
+
+<div class="go-top"><i data-feather="arrow-up"></i></div>
+
+<!-- Dark/Light Toggle -->
+<div class="dark-version">
+    <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider">
+        <span class="slider round"></span>
+    </label>
+</div>
+
+
+</body>
+</html>
+
+
+<!-- Start Footer Area -->
+<footer class="footer-area bg-f7fafd">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <div class="logo black-logo">
+                        <a href="index.html"><img src="{% static 'img/logo.png' %}" alt="logo"></a>
+                    </div>
+                    <div class="logo white-logo">
+                        <a href="index.html"><img src="{% static 'img/white-logo.png' %}" alt="logo"></a>
+                    </div>
+                    <p>لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40 سال استاندارد صنعت
+                        بوده است.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget pl-5">
+                    <h3>خدمات شرکت</h3>
+                    <ul class="list">
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">خدمات</a></li>
+                        <li><a href="#">امکانات</a></li>
+                        <li><a href="#">قیمت گذاری</a></li>
+                        <li><a href="#">آخرین اخبار</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h3>پشتیبانی</h3>
+                    <ul class="list">
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                        <li><a href="#">قوانین و ضوابط</a></li>
+                        <li><a href="#">انجمن</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h3>آدرس شرکت</h3>
+
+                    <ul class="footer-contact-info">
+                        <li><i data-feather="map-pin"></i> کشور شما ، استان و شهر شما ، محله و منطقه شما</li>
+                        <li><i data-feather="mail"></i> ایمیل: <a href="#">Yoursite@site.com</a></li>
+                        <li><i data-feather="phone-call"></i> تلفن: <a style="direction: ltr;" href="#">+ (321) 984
+                            754</a></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="#" class="facebook"><i data-feather="facebook"></i></a></li>
+                        <li><a href="#" class="twitter"><i data-feather="twitter"></i></a></li>
+                        <li><a href="#" class="instagram"><i data-feather="instagram"></i></a></li>
+                        <li><a href="#" class="linkedin"><i data-feather="linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+                <div class="copyright-area">
+                    <p> 1403 © تمام حقوق قالب محفوظ است. طراحی و توسعه توسط <a
+                            href="https://www.rtl-theme.com/author/barat/" target="_blank">Barat Hadian</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="{% static 'img/map.png' %}" class="map" alt="map">
+    <div class="shape1"><img src="{% static 'img/shape1.png' %}" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="{% static 'img/shape2.svg' %}" alt="shape"></div>
+</footer>
+<!-- End Footer Area -->
+
+
+<!-- All JS Link -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/jquery.meanmenu.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/appear.min.js' %}"></script>
+<script src="{% static 'js/odometer.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/feather.min.js' %}"></script>
+<script src="{% static 'js/form-validator.min.js' %}"></script>
+<script src="{% static 'js/contact-form-script.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
